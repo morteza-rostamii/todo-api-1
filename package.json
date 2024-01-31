@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "start": "npm run clean && npm run build && node dist/index.js",
     "dev": "ts-node-dev src/index.ts"
   },
   "keywords": [],
@@ -21,6 +23,7 @@
     "mongoose": "^8.1.1",
     "nodemailer": "^6.9.8",
     "otp-generator": "^4.0.1",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
