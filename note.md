@@ -62,6 +62,18 @@ app.delete('/todos/:id', async (req, res) => {
 
 # deploy to render:
 
+npm uninstall --save @types/cookie-parser@^1.4.6
+npm uninstall --save @types/cors@^2.8.17
+npm uninstall --save @types/express@^4.17.21
+npm uninstall --save @types/jsonwebtoken@^9.0.5
+npm uninstall --save @types/node@^20.11.13
+npm uninstall --save @types/otp-generator@^4.0.2
 
+npm install --save @types/cookie-parser
+npm install --save @types/cors
+npm install --save @types/express
+npm install --save @types/jsonwebtoken
+npm install --save @types/node
+npm install --save @types/otp-generator
 
  -->
